@@ -58,6 +58,14 @@ IoT_Asset_Tracking_And_Sensor_Monitoring/
 
 ## Running the Web App locally
 
+### Prerequisites
+- .NET 10 SDK
+- SQL Server Express
+- SQL Server Management Studio (SSMS)
+- Visual Studio Code
+- Live Server Extension
+- Git/GitHub
+
 ### 1. Clone the Repository
 
 ```bash
@@ -96,5 +104,6 @@ dotnet run
   can add the local backend URL obtained after running backend.
 - Right Click on index.html in VS Code
 - Open with live server
+
 
 
