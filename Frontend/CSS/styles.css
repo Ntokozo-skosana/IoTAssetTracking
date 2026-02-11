@@ -228,8 +228,6 @@ tbody tr:last-child td { border-bottom: none; }
 .actions-cell { display: flex; gap: 6px; }
 .empty-state { text-align: center; padding: 40px; color: #6b7c93; font-size: 13px; }
 
-/* ===== Landing Page Hero ===== */
-
 .hero {
   text-align: center;
   padding: 80px 20px 60px;
@@ -255,7 +253,6 @@ tbody tr:last-child td { border-bottom: none; }
   flex-wrap: wrap;
 }
 
-/* ===== Landing Page Image ===== */
 
 .hero-image-wrapper {
   margin-top: 60px;
