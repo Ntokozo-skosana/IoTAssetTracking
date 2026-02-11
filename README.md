@@ -28,7 +28,7 @@ IoT_Asset_Tracking_And_Sensor_Monitoring/
 │
 ├── Backend/ # ASP.NET Core Web API 
 │ ├── Controllers/ # API controllers (CRUD endpoints)
-│ ├── Data/ # DbContext and 
+│ ├── Data/ # DbContext 
 │ ├── DTOs/ # Data Transfer Objects
 │ ├── Models/ # Entity models      
 │ ├── Backend.csproj # Project definition
@@ -96,4 +96,5 @@ dotnet run
   can add the local backend URL obtained after running backend.
 - Right Click on index.html in VS Code
 - Open with live server
+
 
