@@ -1,4 +1,4 @@
-const API = 'http://localhost:5020/api';
+const API = 'https://iotassettracking-webapp-backend-bnfjf5gpbdbhcpb5.southafricanorth-01.azurewebsites.net/api';
 let allGroups = [];
 
 function showAlert(message, type = 'success') {
