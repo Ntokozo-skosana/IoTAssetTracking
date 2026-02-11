@@ -21,6 +21,7 @@ https://vermillion-faloodeh-8d3f2f.netlify.app/
 
 ## Project Structure
 
+```
 IoT_Asset_Tracking_And_Sensor_Monitoring/
 │
 ├── .github/workflows/  # GitHub Actions CI/CD workflows
@@ -53,6 +54,7 @@ IoT_Asset_Tracking_And_Sensor_Monitoring/
 │
 ├── README.md # Main project documentation
 └── .gitignore # Git ignored files
+```
 
 ## Running the Web App locally
 
@@ -94,3 +96,4 @@ dotnet run
   can add the local backend URL obtained after running backend.
 - Right Click on index.html in VS Code
 - Open with live server
+
