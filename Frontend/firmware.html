@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firmware</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand"></a>
+    <a href="index.html">Dashboard</a>
+    <a href="groups.html">Groups</a>
+    <a href="firmware.html" class="active">Firmware</a>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-header">
+      <div>
+        <div class="page-title">Firmware</div>
+        <div class="page-subtitle">Manage firmware for devices</div>
+      </div>
+      <button class="btn btn-primary" onclick="showAddForm()">+ Add Firmware</button>
+    </div>
+
+    <div id="alert-container"></div>
+
+    <div id="form-section" class="form-section" style="display:none;">
+      <div class="form-section-title" id="form-title">Add New Firmware</div>
+      <input type="hidden" id="edit-id" />
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fw-version">Version *</label>
+          <input type="text" id="fw-version"/>
+        </div>
+        <div class="form-group">
+          <label for="fw-device-type">Device Type *</label>
+          <select id="fw-device-type">
+            <option value="">— Select Device Type —</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="fw-status">Status</label>
+          <select id="fw-status">
+            <option value="Active">Active</option>
+            <option value="Deprecated">Deprecated</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-primary" onclick="saveFirmware()">
+          <span id="save-btn-text">Save Firmware</span>
+        </button>
+        <button class="btn btn-secondary" onclick="hideForm()">Cancel</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">All Firmware Versions</div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Version</th>
+              <th>Device Type</th>
+              <th>Status</th>
+              <th>Released</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="firmware-tbody">
+            <tr><td colspan="6" class="empty-state">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/firmware.js"></script>
+</body>
+</html>
