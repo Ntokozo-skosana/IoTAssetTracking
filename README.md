@@ -6,6 +6,10 @@ from Low-power GPS Tracker to IoT Data Loggers.
 
 ## Deployment
 
+The backend is hosted on Azure Free Tier.  
+After periods of inactivity, the API may take a few seconds to wake up.  
+If data does not appear, please refresh the page.
+
 https://vermillion-faloodeh-8d3f2f.netlify.app/
 
 - Database: I deployed my database on Azure SQL Database
@@ -104,6 +108,7 @@ dotnet run
   can add the local backend URL obtained after running backend.
 - Right Click on index.html in VS Code
 - Open with live server
+
 
 
 
